@@ -38,10 +38,11 @@
         <module>driver</module>
         <module>aggregator</module>
         <module>serving-core</module>
+        <module>plugins</module>
         <module>serving-api</module>
         <module>sdk</module>
         <module>doc</module>
-        <module>plugins</module>
+        <!--<module>plugins</module>-->
         <module>dist</module>
     </modules>
 
@@ -282,6 +283,7 @@
                     <includes>
                         <include>**/*IT.java</include>
                     </includes>
+                    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
                 </configuration>
             </plugin>
             <plugin>
