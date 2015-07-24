@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.stratio.sparkta.driver.test.service
+package com.stratio.sparkta.serving.api.test
 
 import java.io.File
 
@@ -24,10 +24,14 @@ import com.stratio.sparkta.driver.helpers.MockSystem
 import com.stratio.sparkta.driver.models.AggregationPoliciesModel
 import com.stratio.sparkta.driver.service.StreamingContextService
 import com.stratio.sparkta.sdk.JsoneyStringSerializer
+import com.stratio.sparkta.serving.api.actor.JobServerActor
+import com.stratio.sparkta.serving.api.constants.AppConstant
+import com.stratio.sparkta.serving.api.helpers.SparktaHelper
 import org.json4s.{DefaultFormats, native}
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{Matchers, WordSpecLike}
+import spray.testkit.ScalatestRouteTest
 
 import scala.io.Source
 
