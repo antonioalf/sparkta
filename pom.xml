@@ -38,9 +38,10 @@
         <module>driver</module>
         <module>aggregator</module>
         <module>serving-core</module>
+        <module>sdk</module>
         <module>plugins</module>
         <module>serving-api</module>
-        <module>sdk</module>
+        <!--<module>sdk</module>-->
         <module>doc</module>
         <!--<module>plugins</module>-->
         <module>dist</module>
@@ -272,7 +273,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <includes>
-                        <include>**/*Spec.java</include>
+                        <include>**/*Spec.*</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -281,7 +282,7 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <configuration>
                     <includes>
-                        <include>**/*IT.java</include>
+                        <include>**/*IT.*</include>
                     </includes>
                     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
                 </configuration>
