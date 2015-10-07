@@ -82,6 +82,13 @@
               <skip.grunt>${skip.grunt}</skip.grunt>
 						</configuration>
 					</execution>
+          <execution>
+            <id>karma test</id>
+            <goals>
+              <goal>karma</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
 				</executions>
 			</plugin>
 			<plugin>
